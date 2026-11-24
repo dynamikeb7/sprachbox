@@ -1,5 +1,5 @@
 /* Sprachbox: speichert die Seite auf dem Gerät, damit sie auch ohne Internet startet. */
-const CACHE = 'sprachbox-f352e55433';
+const CACHE = 'sprachbox-869f26fa04';
 const DATEIEN = ['./', 'index.html', 'jspdf.umd.min.js', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(DATEIEN)).then(() => self.skipWaiting()));
